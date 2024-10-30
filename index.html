@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Линус Торвальдс</h1>
+        <a href="index.html"><img class = "logo" src="img/linuxlogo.webp" alt="Logotype of linux"></a>
+        <nav>
+            <ul>
+                <li class = "menu-items">
+                    <a href="#introduction">Введение</a>
+                </li>
+                <li class = "menu-items">
+                    <a href="#information">Информация</a>
+                </li>
+                <li class="menu-items">
+                    <a href="#contact-form">Обратная связь</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class = "introduction" id = "introduction">
+            <h2>Введение</h2>
+        <img class = "linus" src="img/linus.jpg" alt="Линус Торвальдс">
+        <section id = "intro2">
+            <q class = "abouthim"><strong>Ли́нус Бенедикт То́рвальдс</strong>  <ins>(встречается написание Ту́рвальдс)</ins> род. 28 декабря 1969, Хельсинки — финно-американский программист. Создатель ядра Linux.
+
+            Воодушевлённый прочтением книги Эндрю Таненбаума, посвящённой операционной системе Minix, Линус создал Linux — ядро операционной системы GNU/Linux, являющейся на данный момент самой распространённой из свободных операционных систем, а также наиболее популярной серверной ОС.
+            
+            С 1997 по 2003 год Линус работал в компании Transmeta, с 2004 — в Open Source Development Labs, с 2007 — в The Linux Foundation (разработка ядра Linux).</q>
+        </section>
+        
+        <cite>Цитата с <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%A2%D0%BE%D1%80%D0%B2%D0%B0%D0%BB%D1%8C%D0%B4%D1%81,_%D0%9B%D0%B8%D0%BD%D1%83%D1%81#Linux">Википедии</a></cite>
+        </section>
+        <section class = "information" id = "information">
+            <h2>Информация</h2>
+            <ol>
+                <li><a href="biography.html">Биография</a></li>
+                <li class = "dark"><a href="achievments.html">Основные достижения</a></li>
+                <li><a href="facts.html">Интересные факты</a></li>
+                <li class = "dark" id="termins"><a href="termins.html">Список терминов</a></li>
+            </ol>
+            <!--10.10.2024 
+                <section class="period">
+                <h2>Основные этапы</h2>
+                <table class="table1">
+                    <caption>Периоды жизни и деятельности</caption>
+                    <thead>
+                        <tr>
+                            <th>Этап</th>
+                            <th>Годы</th>
+                            <th>Описание</th>
+                            <th>Примечания</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td colspan="2">3</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td rowspan="3">6</td>
+                            <td>7</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>11</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>15</td>
+                            <td>16</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+        <section class="feedback">
+            <h2>Обратная связь</h2>
+            <form id="example-form" action="">
+                <label for="login">Введите логин:</label><br>
+                <input type="email" name="login" id="login" required placeholder="email"><br>
+                <label for="pass">Введите пароль:</label><br>
+                <input type="password" name="pass" id="pass" required placeholder="password"><br>
+                <label for="age">Введите возраст</label><br>
+                <input type="number" name="age" id="age" required><br>
+                <p>Пол</p>
+                <input type="radio" id="male" name="gender" checked>
+                <label for="male">Мужской</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Женский</label><br>
+                <input type="submit" value="Войти">
+            </form>
+        </section> -->
+        <section id="contact-form">
+            <h2>Обратная связь</h2>
+            <form id="contact-form" action="">
+                <div class="form-items">
+                    <label for="topic">Тема</label><br>
+                    <select name="topic" id="topic" required>
+                        <option value="1">Заказать услугу</option>
+                        <option value="2">Оставить отзыв</option>
+                        <option value="3">Предложить сотрудничество</option>
+                        <option value="4">Другое</option>
+                    </select>
+                    
+                </div>
+                <div class="form-items">
+                    <label for="name">Имя</label><br>
+                    <input name="name" id="name" type="text" required placeholder="Имя">
+                </div>
+                <div class="form-items">
+                    <label for="email">Почта</label><br>
+                    <input name="email" id="email" type="email" required placeholder="Почта">
+                </div>
+                <div class="form-items">
+                    <label for="tel">Номер телефона</label><br> 
+                    <input type="tel" name="tel" id="tel" required placeholder="Номер телефона">
+                </div>
+                <div class="form-items">
+                    <label for="message">Сообщение</label><br>                    
+                    <textarea name="message-space" id="message-space" rows="6" required placeholder="Текст сообщения"></textarea>
+                </div>
+                <div class="form-items">
+                    <label for="date">Дата</label><br> 
+                    <input type="date" name="date" id="date" required>
+                </div>
+                
+                <div class="form-items">
+                    <input type="checkbox" name="checkbox" id="checkbox" required>
+                    <label for="checkbox">Согласие на обработку данных</label>
+                </div>
+                <div class="form-items">
+                    <input type="submit">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%A2%D0%BE%D1%80%D0%B2%D0%B0%D0%BB%D1%8C%D0%B4%D1%81,_%D0%9B%D0%B8%D0%BD%D1%83%D1%81"><img class = "wiki" src = "img/wikilogo.png" alt="Логотип источника(Википедии)"></a>
+        <p>&copy; <a href="https://portal.midis.info/company/personal/user/20558/">Гергерт Ярослав</a>, 2024 год</p>
+        <p><a href="tel:+79193169849">+79193169849</a></p>
+        <p><a href="mailto:yagergert@gmail.com">yagergert@gmail.com</a></p>
+    </footer>
+</body>
+</html>
